@@ -172,8 +172,8 @@ git config --global alias.cpa "cherry-pick --abort"
 git config --global alias.cpc "cherry-pick --continue"
 git config --global alias.c "commit"
 git config --global alias.ca "commit -a"
-git config --global alias.cf "commit —-fixup"
-git config --global alias.cs "commit —-squash"
+git config --global alias.cf '!sh -c "git commit --fixup $@"'
+git config --global alias.cs '!sh -c "git commit --squash $@"'
 git config --global alias.d "diff"
 git config --global alias.dc "diff --cached"
 git config --global alias.ds "diff --stat"
