@@ -180,6 +180,7 @@ git config --global alias.ds "diff --stat"
 git config --global alias.dsc "diff --stat --cached"
 git config --global alias.l "log"
 git config --global alias.lf "log --follow"
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all"
 git config --global alias.m "merge"
 git config --global alias.mb "merge-base master HEAD"
 git config --global alias.ms "merge --squash"
@@ -195,7 +196,6 @@ git config --global alias.s "status"
 git config --global alias.st "stash"
 git config --global alias.sh "show"
 git config --global alias.shs "show --stat"
-git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all"
 ```
 
 #### Global git ignore
