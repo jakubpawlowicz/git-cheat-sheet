@@ -171,6 +171,7 @@ git config --global alias.c "commit"
 git config --global alias.ca "commit --amend"
 git config --global alias.cf '!sh -c "git commit --fixup $@"'
 git config --global alias.co "checkout"
+git config --global alias.col '!sh -c "git checkout -b $@"'
 git config --global alias.cor '!sh -c "git checkout --track -b $@ origin/$@"'
 git config --global alias.cp "cherry-pick"
 git config --global alias.cpa "cherry-pick --abort"
