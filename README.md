@@ -164,6 +164,7 @@ git rev-parse --short <sha>
 #### My aliases
 ```shell
 git config --global alias.aa "add --all"
+git config --global alias.ai "add --interactive"
 git config --global alias.b "branch"
 git config --global alias.ba "branch -a"
 git config --global alias.co "checkout"
