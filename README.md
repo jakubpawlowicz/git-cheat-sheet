@@ -167,13 +167,13 @@ git config --global alias.aa "add --all"
 git config --global alias.ai "add --interactive"
 git config --global alias.b "branch"
 git config --global alias.ba "branch -a"
+git config --global alias.c "commit"
+git config --global alias.ca "commit --amend"
+git config --global alias.cf '!sh -c "git commit --fixup $@"'
 git config --global alias.co "checkout"
 git config --global alias.cp "cherry-pick"
 git config --global alias.cpa "cherry-pick --abort"
 git config --global alias.cpc "cherry-pick --continue"
-git config --global alias.c "commit"
-git config --global alias.ca "commit --amend"
-git config --global alias.cf '!sh -c "git commit --fixup $@"'
 git config --global alias.cs '!sh -c "git commit --squash $@"'
 git config --global alias.d "diff"
 git config --global alias.dc "diff --cached"
@@ -198,9 +198,9 @@ git config --global alias.rbm "rebase --interactive --autosquash origin/master"
 git config --global alias.rh "reset --hard"
 git config --global alias.rs "reset --soft"
 git config --global alias.s "status"
-git config --global alias.st "stash"
 git config --global alias.sh "show"
 git config --global alias.shs "show --stat"
+git config --global alias.st "stash"
 ```
 
 #### Global git ignore
