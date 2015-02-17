@@ -230,10 +230,10 @@ git config --global color.status auto
 git config --global color.branch auto
 ```
 
-#### Branch name and merge status in bash prompt - it goes to ~/.bash_profile
+#### Branch name and merge status in bash prompt (should go to local or global bash profile)
 ```shell
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
 }
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
