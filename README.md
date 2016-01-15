@@ -192,6 +192,7 @@ git config --global alias.pl "pull"
 git config --global alias.ps "push"
 git config --global alias.psc '!sh -c "git push --set-upstream origin \$(git rev-parse --abbrev-ref HEAD)"'
 git config --global alias.psd '!sh -c "git push origin :\$(git rev-parse --abbrev-ref HEAD)"'
+git config --global alias.psf "push --force-with-lease"
 git config --global alias.r "reset HEAD"
 git config --global alias.rb "rebase"
 git config --global alias.rba "rebase --abort"
