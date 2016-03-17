@@ -144,6 +144,11 @@ git gc --prune=now
 git gc --aggressive --prune=now
 ```
 
+#### Remove deleted files
+```shell
+git rm $(git ls-files --deleted)
+```
+
 #### Prune history
 ```shell
 git gc
