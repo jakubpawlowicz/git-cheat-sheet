@@ -77,6 +77,12 @@ https://help.github.com/articles/ignoring-files
 git pull --rebase && git push
 ```
 
+#### Remove all files from git cache
+```shell
+git rm -r --cached .
+git add .
+```
+
 #### Set up git inet server
 ```shell
 git daemon --base-path /home/git --verbose
