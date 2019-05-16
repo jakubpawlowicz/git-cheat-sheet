@@ -28,6 +28,15 @@ git branch -r
 git remote update
 ```
 
+#### Update forked repository
+```shell
+git remote add upstream https://github.com/<username>/<repo-name>.git
+git fetch upstream
+git checkout master
+git rebase upstream/master
+git push -f origin master
+```
+
 #### Checkout remote branch into local repository
 ```shell
 git checkout -t -b <local-name> <remote-name>
@@ -66,6 +75,12 @@ https://help.github.com/articles/ignoring-files
 #### pull changes from the server + rebase (equivalent of git stash save && git pull && git stash pop && git push) + push
 ```shell
 git pull --rebase && git push
+```
+
+#### Remove all files from git cache
+```shell
+git rm -r --cached .
+git add .
 ```
 
 #### Set up git inet server
