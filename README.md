@@ -28,6 +28,15 @@ git branch -r
 git remote update
 ```
 
+#### Update forked repository
+```shell
+git remote add upstream https://github.com/<username>/<repo-name>.git
+git fetch upstream
+git checkout master
+git rebase upstream/master
+git push -f origin master
+```
+
 #### Checkout remote branch into local repository
 ```shell
 git checkout -t -b <local-name> <remote-name>
